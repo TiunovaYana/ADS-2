@@ -4,10 +4,14 @@
 
 
 double pown(double value, uint16_t n) {
+    if (n == 0)
+        return 1;
+    else {
     double a = value;
     for (uint64_t i = 1; i < n; i++)
         a *= value;
     return a;
+    }
 }
 
 uint64_t fact(uint16_t n) {
