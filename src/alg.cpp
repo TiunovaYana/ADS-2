@@ -11,13 +11,16 @@ double pown(double value, uint16_t n) {
 }
 
 uint64_t fact(uint16_t n) {
-    if (n == 0)
+    if (n == 0) {
         return 1;
-    if (n == 1)
+    }
+    if (n == 1) {
         return 1;
+    }
     uint16_t factorial = 1;
-    for (uint16_t i = 2; i <= n; i++)
+    for (uint16_t i = 2; i <= n; i++) {
         factorial *= i;
+    }
     return factorial;
 }
 
